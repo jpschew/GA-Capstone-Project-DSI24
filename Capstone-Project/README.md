@@ -89,7 +89,7 @@ The video classification video above can be found in the video folder in the tes
 
 <u>Image-Video Test</u>
 
-An input image is given as the person of interest to be identified in an video.
+An input image is given as the person of interest to be identified in a video.
 
 Input Image of a Person Trained in Dataset:
 

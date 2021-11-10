@@ -66,12 +66,12 @@ The threshold was set at 54.4% as shown in the histogram above so that 95% of th
 
 ## Classification Testing
 
-Image classification:
+<u>Image classification:</u>
 
 ![Image Classification for 1 person](./class_figo.png "figo")
 ![Image Classification for 2 persons](./class_gerrardtorres.png "gerrardtorres")
 
-Video classification:
+<u>Video classification:</u>
 
 ![Video Classification 1](./video_class_owen.png "owen")
 ![Video Classification 2](./video_class_giggs.png "giggs")
@@ -80,14 +80,18 @@ The video classification video above can be found in the video folder in the tes
 
 ## Similarity Testing
 
+<u>Image-Image Test:</u>
+
 2 Images were provided to check for the similarity:
 
 ![Cosine Similarity for 2 images of same person](./sim_same.png "drogba")
 ![Cosine Similarity for 2 images of different persosn](./sim_diff.png "reuskane")
 
-An input image is given as the person of interest to be identify in an video:
+<u>Image-Video Test</u>
 
-Input Image:
+An input image is given as the person of interest to be identified in an video.
+
+Input Image of a Person Trained in Dataset:
 
 ![Image of person from the dataset](./owen2.jpg "owen_image")
 
@@ -97,7 +101,9 @@ Output Video:
 
 The output video above can be found in the video folder in the testing-dataset folder saved as "video_out_sim_model5_5percent.mp4".
 
-Input Image 2:
+<br>
+
+Input Image of a Person Not Trained in Dataset:
 
 ![Image of person not from the dataset](./tony1.jpg "tony_leung")
 

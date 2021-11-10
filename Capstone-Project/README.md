@@ -18,6 +18,8 @@ Datasets were self-sourced with 20 images each for 100 soccer stars via Google p
 
 The soccer-dataset in the dataset folder contains 100 players each with 20 images. These images are then splitted into the training, validation and test dataset ith ratio of 7:2:1 and then followed by image augmentation to expand the size of the dataset. Before feeding the images into the model for training, pre-processing of the images to crop the faces were then saved in a separate folder called processed-dataset which will be used to feed into the model for training, validation and evaluation purposes.
 
+An exmaple of image augmentation is shown below:
+
 ![Example of Image Augmentation:](./image-augmentation.png "image augmentation")
 
 
@@ -27,13 +29,13 @@ For this project, there are 2 objectives:
 
 1. Classification of the image of a face to the correct ID – metric used here will be the model accuracy
 
-![Classification](./Classification.png "classification")
+   ![Classification](./Classification.png "classification")
 
 2. Similarity of faces in 2 different images – metric used here will be the cosine similarity to determine if 2 images are from the same or different person
 
-![Similarity Comparison](./Similarity.png "similarity comparison")
+   ![Similarity Comparison](./Similarity.png "similarity comparison")
 
-In this project, the multi-task cascaded was used to detect faces and then extract the faces to be passed to the feature extraction block. For the feature extraction block, transfer learning of VGG16 architecture was used to extract the most important features from an image of the face which can be used for facial similarity comparison. The extracted features can also be passed to the classification block, which is built by fully connected layers with softmax activation function as the output for multi-class classifications.
+In this project, the Multi-Task Cascaded Convolutional Neural Networks (MTCNN) was used to detect faces and then extract the faces to be passed to the feature extraction block. For the feature extraction block, transfer learning of VGG16 architecture was used to extract the most important features from an image of the face which can be used for facial similarity comparison. The extracted features can also be passed to the classification block, which is built by fully connected layers with softmax activation function as the output for multi-class classifications.
 
 Below shows the block diagram of the facial recognition methodology:
 
@@ -59,7 +61,7 @@ Below shows the histogram distribution of 1000 random pair images for
 1. 2 images of same person
 2. 2 images of different person
 
-![Similarity Probability Histogram](./Similarity_Probability.png "similarity probabiity")
+   ![Similarity Probability Histogram](./Similarity_Probability.png "similarity probabiity")
 
 The threshold was set at 54.4% as shown in the histogram above so that 95% of the pair-images can be correctly identified which came from the same person. This threshold was then set in Model 5 for testing which will be shown below.
 

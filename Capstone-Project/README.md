@@ -18,7 +18,7 @@ Datasets were self-sourced with 20 images each for 100 soccer stars via Google p
 
 The soccer-dataset in the dataset folder contains 100 players each with 20 images. These images are then splitted into the training, validation and test dataset ith ratio of 7:2:1 and then followed by image augmentation to expand the size of the dataset. Before feeding the images into the model for training, pre-processing of the images to crop the faces were then saved in a separate folder called processed-dataset which will be used to feed into the model for training, validation and evaluation purposes.
 
-An exmaple of image augmentation is shown below:
+An example of image augmentation is shown below:
 
 ![Example of Image Augmentation:](./image-augmentation.png "image augmentation")
 
